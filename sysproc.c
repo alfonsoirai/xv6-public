@@ -89,3 +89,8 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+int sys_shutdown(void){
+    outw(0xB004, 0X0 | 0X2000);
+    return 0;
+}
