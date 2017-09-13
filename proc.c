@@ -554,7 +554,10 @@ procdump(void)
   }
 }
 
-
-void printHello(void){
-  cprintf("Hola desde el console");
+void killProcess(void){
+  if (myproc()){
+    kill(myproc()->pid);
+    return;
+  }
+  cprintf("No hay ningun proceso dispobible\n");
 }
