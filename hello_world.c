@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <semaphore.h>
 
-#define NUM_THREADS     10
+#define NUM_THREADS     5
 
 long saldo;
 sem_t mutex;
