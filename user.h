@@ -34,6 +34,7 @@ int signal(int, void(*func)(void));
 int getppid(void);
 int signal(int, sighandler_t);
 int killsignal(int, int);
+int chmod(char *, char *);
 
 
 // ulib.c
